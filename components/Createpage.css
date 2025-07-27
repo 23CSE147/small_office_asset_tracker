@@ -35,9 +35,8 @@
   border: 1px solid #cbd5e1;
   border-radius: 7px;
   padding: 10px 12px;
-  transition: border 0.21s;
+  transition: border 0.21s, background 0.18s;
 }
-
 .create-form-input:focus,
 .create-form-select:focus {
   outline: none;
@@ -63,7 +62,6 @@
   background: #174ebf;
 }
 
-/* Mobile-friendly */
 @media (max-width: 600px) {
   .create-form-wrapper {
     max-width: 98vw;

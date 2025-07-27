@@ -31,7 +31,6 @@ export default function CreateAssetPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Convert purchased to a real date (if set)
     let submitData = { ...formData };
     if (submitData.purchased) submitData.purchased = new Date(submitData.purchased);
 

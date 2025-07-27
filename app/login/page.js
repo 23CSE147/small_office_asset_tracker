@@ -29,7 +29,6 @@ export default function LoginPage() {
   return (
     <div className="login-page-bg">
       <div className="login-container">
-        {/* Brand/logo */}
         <div className="login-logo-row">
           <img src="/favicon.ico" alt="AssetTracker Logo" className="login-logo" />
           <span className="login-brand">AssetTracker Pro</span>

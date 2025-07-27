@@ -1,6 +1,6 @@
-// components/Createpage.js
 'use client';
 import './Createpage.css'
+
 const Createpage = ({ formData, onChange, onSubmit, isEdit = false }) => {
   return (
     <form onSubmit={onSubmit}>

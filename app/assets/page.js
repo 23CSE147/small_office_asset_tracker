@@ -1,14 +1,13 @@
-'use client';
+"use client";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import AssetCard from "@/components/AssetCard";
-import Dashboard from "@/components/Dashboard"; // Your stats bar component
-import AssetSearchBar from "@/components/AssetSearchBar"; // << NEW!
+import Dashboard from "@/components/Dashboard";
+import AssetSearchBar from "@/components/AssetSearchBar";
 import "./assets.css";
 
-// Dashboard summary stats utility
 function summarizeAssets(assets) {
   const total = assets.length;
   const active = assets.filter((a) => a.status === "active").length;
@@ -116,8 +115,7 @@ export default function AssetsPage() {
 
         <Dashboard stats={stats} />
 
-        {/* --- Search Bar --- */}
-        <AssetSearchBar value={search} onChange={setsearch} ></AssetSearchBar>
+        <AssetSearchBar value={search} onChange={setsearch}></AssetSearchBar>
 
         <div className="dashboard-assets-list">
           {filteredAssets.map((asset) => (

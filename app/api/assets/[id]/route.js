@@ -1,11 +1,11 @@
-// app/api/assets/[id]/route.js
+
 import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
 import Asset from "@/models/Asset";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/authOptions";
 
-// GET asset by ID
+
 export async function GET(_, { params }) {
   const { id } = await params;           
   await connectDB();
@@ -31,7 +31,7 @@ export async function PUT(req, { params }) {
 }
 
 
-// DELETE asset by ID
+
 export async function DELETE(_, { params }) {
   const { id } = await params;
   await connectDB();

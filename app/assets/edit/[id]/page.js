@@ -89,7 +89,7 @@ export default function EditAssetPage() {
         formData={formData}
         onChange={handleChange}
         onSubmit={handleSubmit}
-      
+        isEdit
       />
     </div>
   );

@@ -1,4 +1,4 @@
-// components/Editpage.js
+
 "use client";
 import "./Editpage.css";
 const Editpage = ({ formData, onChange, onSubmit, isEdit = false }) => {
